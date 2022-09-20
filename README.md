@@ -27,4 +27,23 @@ Please take no more than 2 hours to finish. We do not track time, hence you can 
   - Source code that you used for deriving the results
   - README that explains various design decisions that you took.
 
-Commit your answers in a private Github repository(it's free), please do not fork as other candidates will see your answers. Add Zan(liangzan), Kyle(kyled7), Thanh(thanhnpp), Ben(BenPropine) as collaborators then inform us that it is done at zan@propine.com, kyle.dinh@propine.com, thanh.nguyen@propine.com, ben.nguyen@propine.com.
+Commit your answers in a private Github repository(it's free), please do not fork as other candidates will see your answers. Add Zan(liangzan), Thanh(thanhnpp), Ben(BenPropine) as collaborators then inform us that it is done at zan@propine.com, thanh.nguyen@propine.com, ben.nguyen@propine.com.
+
+## Usage
+
+Please clone the git repo, then runs the 2 following command sequentially.
+
+```
+npm install ci
+npm start
+```
+
+For deploying to Server please run.
+```
+npm install ci
+npm run server
+```
+
+For next Phase, im going to bundle this Application into Docker Images, push it to Private Dockerhub Repository,
+and then deploy into my Personal Self-Managed Kubernetes Cluster.
+Then, creating Ingress Rules to route traffic into specific Pods, setup SSL Certificate for Secured Connection.
